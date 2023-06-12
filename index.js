@@ -2,9 +2,15 @@ const express = require("express");
 const app = express();
 const port = 5000;
 
-app.use(express.json()); // Middleware to parse JSON request bodies
+app.use(express.json()); // Middleware 
 
-const users = []; // Array to store user data
+const users = [{
+  name: 'malit',
+  email: "malitmohamud@gmail.com",
+  Number: "6342445555"
+
+
+}]; // Array to store user data
 
 app.get('/', (req, res) => {
   res.send("Hello, World!");
